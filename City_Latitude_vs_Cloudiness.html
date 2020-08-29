@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = 'en-us'>
+    <head>
+        <meta charset="UTF-8">
+        <title>Latitude Analysis</title>
+        <!-- Bring in our bootstrap stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    </head>
+      
+    <body style= "background-color: lightslategray">
+      <!--Navbar-->
+      <header class="navbar navbar-light" style= "background-color: lightblue">
+        <!--Navbar Main Page Link-->
+        <a class="navbar btn-secondary" href="index.html">Latitude</a>
+          <!--Dropdown-->
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </button>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" type= "button" href="City_Latitude_vs_Max_Temp.html">City Latitude vs Max Temp</a>
+              <a class="dropdown-item" type= "button" href="City_Latitude_vs_Humidity.html">City Latitude vs Humidity</a>
+              <a class="dropdown-item" type= "button" href="City_Latitude_vs_Cloudiness.html">City Latitude vs Cloudiness</a>
+              <a class="dropdown-item" type= "button" href="City_Latitude_vs_Wind_Speed.html">City Latitude vs Wind Speed</a>
+            </div>
+            <a button type="button" class="btn btn-secondary" href="Comparison.html">Comparison</a>
+            <a button type="button" class="btn btn-secondary" href="Data.html">Data</a>
+          </div>
+      </header>
+      <div class="card-group">
+        <!--Summary-->
+        <div class="card p-3">
+          <div class="card-body">
+            <h1 class="card-title"style="font-size:50px">Cloudiness </h1>
+            <div class="card-img-top">
+              <img src="Resources/assets\images/Fig3.png" alt="Fig3 Image" style="width: 400px;height:400px">
+            </div>  
+            <p class="card-text" style="font-size:30px"> </p>
+          </div>
+        <!--Visualizations-->
+        <div class="card-group">
+          <div class="card-body">
+            <h2 class="card-title" style="font-size:40px">Visualizations </h2>
+            <div class="card-columns">
+              <!--Fig 1-->
+              <div class="card p-3">
+                <div class="card-img-top">
+                  <a href="City_Latitude_vs_Max_Temp.html"><img src="Resources/assets\images/Fig1.png" alt="Fig1 Image" style="width: 200px;height:200px; margin: 0px 10px 0px 0px"></a>
+                </div>
+              </div>
+              <!--Fig 2-->
+              <div class="card p-3">
+                <div class="card-img-top">
+                <a href="City_Latitude_vs_Humidity.html"><img src="Resources/assets\images/Fig2.png" alt="Fig2 Image" style="width: 200px;height:200px; margin: 0px 10px 0px 0px"></a>
+                </div>
+              </div>
+              <!--Fig 3-->
+              <div class="card p-3">
+                <div class="card-img-top">
+                  <a href="City_Latitude_vs_Cloudiness.html"><img src="Resources/assets\images/Fig3.png" alt="Fig3 Image" style="width: 200px;height:200px; margin: 0px 10px 0px 0px"></a>
+                </div>
+              </div>
+              <!--Fig 4-->
+              <div class="card p-3">
+                <div class="card-img-top">
+                  <a href="City_Latitude_vs_Wind_Speed.html"><img src="Resources/assets\images/Fig4.png" alt="Fig4 Image" style="width: 200px;height:200px; margin: 0px 10px 0px 0px"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </body>
+</html>
