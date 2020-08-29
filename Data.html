@@ -33,10 +33,7 @@
             <a button type="button" class="btn btn-secondary" href="Data.html">Data</a>
           </div>
       </header>
-      <div class="card-group">
         <!--Data-->
-        <div class="card p-3">
-          <div class="card-body">
             <div class="container">
               <div class="table">
                <h1 style="font-size:40px; color: red" Align="center">Data</h1>
@@ -46,8 +43,6 @@
               </div>
              </div>
             
-          </div>
-        </div>
     </body>
 </html>
 
@@ -60,7 +55,7 @@
      success:function(data)
      {
       var city_data = data.split(/\r?\n|\r/);
-      var table_data = '<table class="table table-bordered table-hover">';
+      var table_data = '<table class="table table-responsive table-bordered table-hover">';
       for(var count = 0; count<city_data.length; count++)
       {
        var cell_data = city_data[count].split(",");
